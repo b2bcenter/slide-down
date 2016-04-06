@@ -1,0 +1,32 @@
+{
+  "name": "slide-down",
+  "homepage": "https://github.com/b2bcenter/slide-down",
+  "authors": [
+    "v.shleyze <v.shleyze@mail.ru>"
+  ],
+  "description": "Different javascript slider",
+  "main": "jquery.slide-down.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "plugin",
+    "slide",
+    "block",
+    "slider",
+    "js",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.9.0"
+  }
+}
