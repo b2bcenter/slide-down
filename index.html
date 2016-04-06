@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Slide-down by b2bcenter</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Slide-down</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/b2bcenter/slide-down">View the Project on GitHub <small>b2bcenter/slide-down</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/b2bcenter/slide-down/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/b2bcenter/slide-down/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/b2bcenter/slide-down">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="slide-down" class="anchor" href="#slide-down" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Slide Down</h1>
+
+<p>Очередной jQuery плагин для показа блоков, который умеет делать это по другому. Необходим для выезжающих блоков, которые именно "выезжают" и сдвигают контент. </p>
+
+<h2>
+<a id="Установка" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Установка</h2>
+
+<p>Воспользуйтесь <a href="http://bower.io">Bower</a>:</p>
+
+<pre><code>$ bower install slide-down
+</code></pre>
+
+<p>Или <a href="http://npm.com">npm</a></p>
+
+<pre><code>$ npm install slide-down
+</code></pre>
+
+<p>Если вышеперечисленные способы не подошли, скачивайте напрямую <a href="https://github.com/b2bcenter/slide-down">GitHub</a></p>
+
+<h2>
+<a id="Подключение" class="anchor" href="#%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Подключение</h2>
+
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!--  Css --&gt;</span>
+&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/jquery.slidedown.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;
+<span class="pl-c">&lt;!-- jQuery --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+<span class="pl-c">&lt;!-- SlideDown --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s">«jquery.slidedown.js</span><span class="pl-s"><span class="pl-pds">"</span>&gt;&lt;/script&gt;</span></pre></div>
+
+<h2>
+<a id="Разметка" class="anchor" href="#%D0%A0%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Разметка</h2>
+
+<div class="highlight highlight-text-html-basic"><pre>
+<span class="pl-c">&lt;!-- Триггер может располагаться где угодно. --&gt;</span>
+<span class="pl-c">&lt;!-- В атрибуте [data-slidedown-trigger] указываем имя блока, который мы открываем/закрываем, в данном случае это txt  --&gt;</span>
+
+&lt;<span class="pl-ent">span</span> <span class="pl-e">data-slidedown-trigger</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span>&gt;Текст&lt;/<span class="pl-ent">span</span>&gt;
+
+<span class="pl-c">&lt;!-- Выезжающий блок, так же может распологаться где угодно, вне зависимости от триггера --&gt;</span>
+<span class="pl-c">&lt;!-- В атрибуте [data-slidedown-target] указываем имя блока, к нему будет обращаться триггер  --&gt;</span>
+
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down<span class="pl-pds">"</span></span> <span class="pl-e">data-slidedown-target</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down-content<span class="pl-pds">"</span></span>&gt;
+        <span class="pl-c">&lt;!-- Контент --&gt;</span>
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h2>
+<a id="Опции" class="anchor" href="#%D0%9E%D0%BF%D1%86%D0%B8%D0%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Опции</h2>
+
+<h3>
+<a id="Открытый-блок" class="anchor" href="#%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9-%D0%B1%D0%BB%D0%BE%D0%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Открытый блок</h3>
+
+<p>Если необходимо, что бы блок был  по-умолчанию открыт, то блоку с атрибутом data-slidedown-target необходимо добавить класс .slide_down--active</p>
+
+<h3>
+<a id="Анимация" class="anchor" href="#%D0%90%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Анимация</h3>
+
+<p>Базовую анимацию можно изменить, для этого надо блоку с data-slidedown-target добавить data-animation, который будет указывать тип и скорость анимации:</p>
+
+<ul>
+<li>ease — Обычная анимация, по умолчанию</li>
+<li>ease-fast — Обычная анимация, быстрая скорость</li>
+<li>ease-slow — Обычная анимация, медленная скорость</li>
+<li>bounce — Анимация "прыгающий мяч", нормальная скорость</li>
+<li>bounce-fast — Анимация "прыгающий мяч", быстрая скорость</li>
+<li>bounce-slow — Анимация "прыгающий мяч", медленная скорость</li>
+</ul>
+
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Выезжающий блок --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down<span class="pl-pds">"</span></span> <span class="pl-e">data-slidedown-target</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span>  <span class="pl-e">data-animation</span>=<span class="pl-s"><span class="pl-pds">"</span>ease-slow<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down-content<span class="pl-pds">"</span></span>&gt;
+        <span class="pl-c">&lt;!-- Контент --&gt;</span>
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>
+<a id="Синхронность" class="anchor" href="#%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Синхронность</h3>
+
+<p>Если необходимо, что бы блоки зависили друг от друга (всегда может быть открыт только один блок), то так же необходимо добавить всем зависимым блокам   с атрибутом data-slidedown-target  дополнительный аттрибут data-sync.</p>
+
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Один выезжающий блок --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down<span class="pl-pds">"</span></span> <span class="pl-e">data-slidedown-target</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span> <span class="pl-e">data-sync</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down-content<span class="pl-pds">"</span></span>&gt;
+        <span class="pl-c">&lt;!-- Контент --&gt;</span>
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;
+
+<span class="pl-c">&lt;!-- Второй выезжающий блок --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down<span class="pl-pds">"</span></span> <span class="pl-e">data-slidedown-target</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span> <span class="pl-e">data-sync</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down-content<span class="pl-pds">"</span></span>&gt;
+        <span class="pl-c">&lt;!-- Контент --&gt;</span>
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h2>
+<a id="Методы" class="anchor" href="#%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Методы</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-c1">open</span>(<span class="pl-s"><span class="pl-pds">'</span>id или $(<span class="pl-pds">'</span></span>обьект<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">'</span></span>); <span class="pl-c">// Откроет указанный блок</span>
+<span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-c1">close</span>(<span class="pl-s"><span class="pl-pds">'</span>id или $(<span class="pl-pds">'</span></span>обьект<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">'</span></span>); <span class="pl-c">// Закроет указанный блок</span>
+<span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-en">closeAll</span>(<span class="pl-s"><span class="pl-pds">'</span>пустой или $(<span class="pl-pds">'</span></span>обьекты<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">'</span></span>); <span class="pl-c">// Закроет все или все указанные блоки</span></pre></div>
+
+<h2>
+<a id="Поддержка" class="anchor" href="#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Поддержка</h2>
+
+<p>Используется CSS3 анимация, если браузер неподдерживает анимацию, то блоки будут показаны как hide/show</p>
+
+<ul>
+<li>IE 9+</li>
+<li>Chrome 8+</li>
+<li>Firefox 10+</li>
+<li>Safari 3+</li>
+<li>Opera 10.6+</li>
+</ul>
+
+<h2>
+<a id="Лицензия" class="anchor" href="#%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Лицензия</h2>
+
+<p><a href="https://github.com/b2bcenter/slide-down/blob/master/LICENSE">MIT</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/b2bcenter">b2bcenter</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
