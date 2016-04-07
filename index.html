@@ -6,8 +6,50 @@
     <title>Slide-down by b2bcenter</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/b2bcenter/slide-down/master/build/css/jquery.slide-down.min.css">
+    <link rel="stylesheet" href="stylesheets/jquery.slide-down.min.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
+  <style type="text/css" rel="stylesheet">
+          hr {
+              height: 0;
+              border-right: 0;
+              border-top: 0;
+              border-bottom: 1px solid #e5e5e5;
+              border-left: 0;
+              margin: 10px 0;
+              clear: both;
+          }
+          .row:before, .row:after {
+              content: "";
+              display: table;
+          }
+          .row:after {
+              clear: both;
+          }
+          .col {
+              min-height: 30px;
+              box-sizing: border-box;
+          }
+          .ex {
+              background-color: #f8f8f8;
+              border: 1px solid #e5e5e5;
+              padding: 8px 15px;
+              margin: 0 0 20px;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+          }
+          [data-slidedown-trigger] {
+              color: #2283c3;
+              cursor: pointer;
+              display: inline-block;
+              font-size: 1em;
+              font-weight: bold;
+              -webkit-transition: color 0.3s ease 0s;
+              -moz-transition: color 0.3s ease 0s;
+              -o-transition: color 0.3s ease 0s;
+              transition: color 0.3s ease 0s;
+          }
+      </style>
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +80,7 @@
 <a id="Демо" class="anchor" href="#Демо" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Демо</h2>
 
 
-<h3>Type of animations</h3>
+<h3>Виды анимации</h3>
 <div class="ex">
     <div class="row">
         <div class="col">
@@ -95,7 +137,7 @@
         </div>
     </div>
 </div>
-<h3>Sync block </h3>
+<h3>Синхронизированные блоки</h3>
 <div class="ex">
     <div class="row">
         <div class="col">
@@ -239,6 +281,7 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    <script src="https://raw.githubusercontent.com/b2bcenter/slide-down/master/build/js/jquery.slide-down.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="javascripts/jquery.slide-down.min.js"></script>
   </body>
 </html>
