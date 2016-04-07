@@ -6,6 +6,7 @@
     <title>Slide-down by b2bcenter</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/b2bcenter/slide-down/master/build/css/jquery.slide-down.min.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
@@ -32,6 +33,89 @@
 <a id="slide-down" class="anchor" href="#slide-down" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Slide Down</h1>
 
 <p>Очередной jQuery плагин для показа блоков, который умеет делать это по другому. Необходим для выезжающих блоков, которые именно "выезжают" и сдвигают контент. </p>
+
+<h2>
+<a id="Демо" class="anchor" href="#Демо" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Демо</h2>
+
+
+<h3>Type of animations</h3>
+<div class="ex">
+    <div class="row">
+        <div class="col">
+            <span data-slidedown-trigger="ease">Default</span>
+            <div class="slide_down" data-slidedown-target="ease">
+                <div class="slide_down-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices mi sed purus suscipit pulvinar. Donec elementum condimentum odio, tempor egestas sapien tincidunt ac. Donec non lacus metus. Phasellus at tellus tristique, pulvinar felis quis, molestie diam. Aliquam ut ipsum in libero malesuada pulvinar. Nunc quam odio, condimentum vel arcu eu, posuere dapibus nisl. Fusce laoreet vel lacus non imperdiet. Etiam iaculis, neque eu laoreet maximus, ligula odio tempus justo, sit amet pulvinar ex ligula a ante. Duis hendrerit efficitur gravida. Donec viverra tortor semper nisi ullamcorper luctus. Duis rutrum, eros id pretium rhoncus, leo ex ultricies tellus, a imperdiet odio lorem vel mi. Morbi gravida augue at interdum venenatis. Nam eget mi ut lorem condimentum iaculis vel at nunc. Suspendisse vehicula lorem vel metus mollis, eget consequat turpis tempor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <span data-slidedown-trigger="ease-fast">Ease-Fast</span>
+            <div class="slide_down" data-slidedown-target="ease-fast" data-animation="ease-fast">
+                <div class="slide_down-content">
+                    <p>Maecenas ut interdum est, nec ullamcorper sapien. Sed mattis tempor molestie. Integer eleifend magna at massa euismod aliquet. Cras scelerisque elementum justo, non tristique sem accumsan a. Quisque vulputate viverra posuere. Suspendisse potenti. Proin dictum vel enim vitae faucibus. Cras elementum, mauris non mollis porttitor, risus mi posuere ex, ut rutrum eros mauris nec neque. Phasellus molestie dui quis tellus lobortis, nec consectetur mauris maximus. Praesent vestibulum felis sit amet urna ornare, non fringilla nunc tempor. Praesent feugiat ultrices justo, in varius lorem placerat eget.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <span data-slidedown-trigger="ease-slow">Ease-Slow</span>
+            <div class="slide_down"  data-slidedown-target="ease-slow" data-animation="ease-slow">
+                <div class="slide_down-content">
+                    <p>Etiam id tortor at purus pulvinar lobortis. In hac habitasse platea dictumst. Donec tincidunt justo eu bibendum semper. In sit amet mauris porttitor, congue leo et, pretium magna. Sed porta, ligula sed facilisis posuere, dui leo mollis est, quis vulputate sem turpis sit amet mauris. Etiam laoreet ac nunc non dignissim. Aenean non egestas libero. Ut rhoncus justo eget nisi convallis, ut lobortis nisi imperdiet. Nunc eleifend, libero vel dignissim cursus, purus libero tempor lorem, sit amet blandit erat ipsum ut arcu. Suspendisse sit amet porttitor velit. Maecenas fermentum gravida nulla ullamcorper luctus. Aenean vehicula eros quis ultrices interdum. Aenean suscipit ultrices lobortis. Praesent eu tellus lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam quis tortor non turpis dictum venenatis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <span data-slidedown-trigger="bounce-normal">Bounce</span>
+            <div class="slide_down" data-slidedown-target="bounce-normal" data-animation="bounce">
+                <div class="slide_down-content">
+                    <p>Vivamus vitae dolor ut nibh hendrerit posuere sed nec mi. Fusce egestas, felis iaculis tincidunt gravida, erat purus facilisis justo, sed pretium dui nulla ac nulla. Phasellus ac ante sollicitudin, efficitur magna eu, faucibus ligula. Donec et dignissim elit. Nulla erat orci, suscipit sit amet cursus ac, ultricies et leo. Etiam tempor odio et lacus porta ornare. Maecenas gravida tincidunt turpis id porta.</p>
+                    <p><span data-slidedown-trigger="bounce-normal">Extend trigger</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <span data-slidedown-trigger="bounce-fast">Bounce-Fast</span>
+            <div class="slide_down" data-slidedown-target="bounce-fast" data-animation="bounce-fast">
+                <div class="slide_down-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo eget risus laoreet imperdiet. Nunc molestie vitae dui congue tempor. Cras sodales nunc vel augue fermentum, eget sodales tellus elementum. Maecenas at accumsan massa, et sodales urna. In ullamcorper eget lorem et laoreet. Mauris varius tellus ut dui porttitor, sit amet consequat turpis eleifend. Sed consequat tincidunt pretium. Quisque blandit eros commodo, euismod lorem vitae, pharetra justo. Duis pellentesque accumsan mauris ut imperdiet. Nullam at rhoncus orci, ultrices elementum mi. In rhoncus, diam a euismod semper, lacus lacus lacinia nisl, eu suscipit turpis nulla et nisi. Nunc faucibus lobortis sollicitudin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <span data-slidedown-trigger="bounce-slow">Bounce-Slow</span>
+            <div class="slide_down" data-slidedown-target="bounce-slow" data-animation="bounce-slow">
+                <div class="slide_down-content">
+                    <p>Nullam interdum nec mauris eu blandit. Suspendisse consequat sollicitudin velit, quis blandit dolor dignissim sit amet. Praesent rhoncus nisi sit amet orci maximus, sit amet fermentum leo placerat. Maecenas mollis, urna in lobortis tincidunt, justo odio ullamcorper ante, at volutpat sem metus sed mi. Donec venenatis felis sit amet pellentesque sodales. Cras sit amet iaculis ipsum. Donec a turpis diam. Nulla pharetra feugiat est, sed cursus sem. Sed ac leo vel mi finibus pulvinar ut quis turpis. Ut eget consequat risus, ac eleifend sapien. Cras tincidunt sapien eu risus euismod feugiat. Duis pulvinar enim eu varius aliquet. Aliquam volutpat, metus ut aliquam commodo, arcu turpis suscipit massa, vel dictum quam nibh in augue.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h3>Sync block </h3>
+<div class="ex">
+    <div class="row">
+        <div class="col">
+            <span data-slidedown-trigger="data-sync_01">Sync block</span>
+            <div class="slide_down" data-sync data-slidedown-target="data-sync_01">
+                <div class="slide_down-content">
+                    <p>Aliquam luctus ante urna, id semper ipsum euismod varius. Sed vel mauris vestibulum, feugiat tellus non, pharetra felis. Donec accumsan malesuada gravida. Etiam dignissim lacus et molestie congue. Ut vel accumsan ligula. Quisque nulla ante, pharetra quis magna a, varius convallis est. Fusce vel porttitor sem. Quisque quis consequat odio, id placerat urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In facilisis libero auctor nunc imperdiet tristique. Phasellus pellentesque velit nulla, in elementum leo ornare eget. Quisque laoreet efficitur nibh ac bibendum. Aenean malesuada porttitor mauris, sit amet porttitor orci congue sit amet. Vivamus in bibendum metus. Donec faucibus elit ac fringilla viverra. Etiam sit amet velit mauris.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <span data-slidedown-trigger="data-sync_02">Sync block with ease-fast</span>
+            <div class="slide_down" data-sync data-slidedown-target="data-sync_02" data-animation="ease-fast">
+                <div class="slide_down-content">
+                    <p>Maecenas dictum rutrum ante, sit amet accumsan dui. Cras eget luctus erat. Pellentesque in finibus lectus, nec pretium nulla. In hendrerit elementum neque, a egestas ante efficitur sit amet. Suspendisse ullamcorper molestie mi, sit amet sodales quam tincidunt eget. Morbi cursus ac velit ut tempus. Sed lobortis et lectus ac sodales. Quisque ullamcorper justo eu varius ultrices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <h2>
 <a id="Установка" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Установка</h2>
@@ -155,6 +239,6 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="https://raw.githubusercontent.com/b2bcenter/slide-down/master/build/js/jquery.slide-down.min.js"></script>
   </body>
 </html>
