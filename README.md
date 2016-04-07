@@ -10,13 +10,13 @@
 $ bower install slide-down
 ```
 
-Или [npm](http://npm.com)
+Или [npm](https://www.npmjs.com/package/slide-down)
 
 ```
 $ npm install slide-down
 ```
 
-Если вышеперечисленные способы не подошли, скачивайте напрямую [GitHub](https://github.com/b2bcenter/slide-down)
+Если вышеперечисленные способы не подошли, [скачивайте с GitHub](https://github.com/b2bcenter/slide-down/zipball/master)
 
 ## Подключение ##
 
@@ -36,12 +36,15 @@ $ npm install slide-down
 ```html
 
 <!-- Триггер может располагаться где угодно. -->
-<!-- В атрибуте [data-slidedown-trigger] указываем имя блока, который мы открываем/закрываем, в данном случае это txt  -->
+<!-- В атрибуте [data-slidedown-trigger] указываем имя блока,
+     который мы открываем/закрываем, в данном случае это txt  -->
 
 <span data-slidedown-trigger="txt">Текст</span>
 
-<!-- Выезжающий блок, так же может распологаться где угодно, вне зависимости от триггера -->
-<!-- В атрибуте [data-slidedown-target] указываем имя блока, к нему будет обращаться триггер  -->
+<!-- Выезжающий блок, так же может распологаться где угодно,
+     вне зависимости от триггера -->
+<!-- В атрибуте [data-slidedown-target] указываем имя блока,
+     к нему будет обращаться триггер  -->
 
 <div class="slide_down" data-slidedown-target="txt">
 	<div class="slide_down-content">
@@ -103,9 +106,12 @@ $ npm install slide-down
 
 
 ```javascript
-$.slideDown.open('id или $('обьект')'); // Откроет указанный блок
-$.slideDown.close('id или $('обьект')'); // Закроет указанный блок
-$.slideDown.closeAll('пустой или $('обьекты')'); // Закроет все или все указанные блоки
+// Откроет указанный блок
+$.slideDown.open('id или $('обьект')');
+// Закроет указанный блок
+$.slideDown.close('id или $('обьект')');
+// Закроет все или все указанные блоки
+$.slideDown.closeAll('пустой или $('обьекты')'); 
 ```
 
 ## Поддержка ##
