@@ -1,1 +1,13 @@
+/*!
+ * jQuery Slide-down v.1.0.0
+ * http://b2bcenter.github.io/slide-down/
+ *
+ * Author
+ * Vladimir Shleyze v.shleyze@mail.ru
+ *
+ * Released under the MIT license
+ * https://github.com/b2bcenter/slide-down/blob/master/LICENSE
+ *
+ * Date: 2016.04.07
+ */
 .slide_down{clear:both;height:0;overflow:hidden}.slide_down-content{-webkit-transform:translateZ(0);-moz-transform:translateZ(0);transform:translateZ(0);-webkit-transition-property:margin-top;-moz-transition-property:margin-top;-o-transition-property:margin-top;transition-property:margin-top;-webkit-transition-duration:.4s;-moz-transition-duration:.4s;-o-transition-duration:.4s;transition-duration:.4s;-webkit-transition-timing-function:ease-in-out;-moz-transition-timing-function:ease-in-out;-o-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out;-webkit-transition-delay:.05s;-moz-transition-delay:.05s;-o-transition-delay:.05s;transition-delay:.05s}.slide_down-content:before,.slide_down-content:after{content:"";display:table}.slide_down-content:after{clear:both}.slide_down--active{height:auto;overflow:visible}.slide_down--active .slide_down-content{margin-top:0!important}.slide_down--animating{height:auto!important;overflow:hidden!important}.slide_down--animating[data-animation*="bounce"] .slide_down-content{-webkit-transition-duration:.6s;-moz-transition-duration:.6s;-o-transition-duration:.6s;transition-duration:.6s;-webkit-transition-timing-function:cubic-bezier(.6,-0.5,.3,1.4);-moz-transition-timing-function:cubic-bezier(.6,-0.5,.3,1.4);-o-transition-timing-function:cubic-bezier(.6,-0.5,.3,1.4);transition-timing-function:cubic-bezier(.6,-0.5,.3,1.4)}.slide_down--animating[data-animation="bounce-fast"] .slide_down-content{-webkit-transition-duration:.4s;-moz-transition-duration:.4s;-o-transition-duration:.4s;transition-duration:.4s}.slide_down--animating[data-animation="bounce-slow"] .slide_down-content{-webkit-transition-duration:.8s;-moz-transition-duration:.8s;-o-transition-duration:.8s;transition-duration:.8s}.slide_down--animating[data-animation="ease-fast"] .slide_down-content{-webkit-transition-duration:.2s;-moz-transition-duration:.2s;-o-transition-duration:.2s;transition-duration:.2s}.slide_down--animating[data-animation="ease-slow"] .slide_down-content{-webkit-transition-duration:.6s;-moz-transition-duration:.6s;-o-transition-duration:.6s;transition-duration:.6s}
