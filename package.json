@@ -1,6 +1,6 @@
 {
   "name": "slide-down",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Different javascript slider",
   "main": "jquery.slide-down.js",
   "repository": {
