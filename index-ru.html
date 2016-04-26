@@ -46,13 +46,13 @@
     <header>
         <h1>
             Slide-down
-            <small>Switch to <a href="index-ru.html">Russian</a></small>
+            <small>Переключить на <a href="index.html">English</a></small>
         </h1>
-        <p class="view"><a href="https://github.com/b2bcenter/slide-down">View the Project on GitHub <small>b2bcenter/slide-down</small></a></p>
+        <p class="view"><a href="https://github.com/b2bcenter/slide-down">Перейти на GitHub <small>b2bcenter/slide-down</small></a></p>
         <ul>
-          <li><a href="https://github.com/b2bcenter/slide-down/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/b2bcenter/slide-down/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/b2bcenter/slide-down">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/b2bcenter/slide-down/zipball/master">Загрузить <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/b2bcenter/slide-down/tarball/master">Загрузить <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/b2bcenter/slide-down">Перейти <strong>GitHub</strong></a></li>
         </ul>
     </header>
     <section>
@@ -60,12 +60,12 @@
             <a id="slide-down" class="anchor" href="#slide-down" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
             Slide Down
         </h1>
-        <p>Each jQuery plugin to display blocks can do it differently. It’s essential for sliding blocks, which are obviously "sliding" and shifting content.</p>
+        <p>Очередной jQuery плагин для показа блоков, который умеет делать это по другому. Необходим для выезжающих блоков, которые именно "выезжают" и сдвигают контент. </p>
         <h2>
             <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Demo
+            Демо
         </h2>
-        <h3>Animation types</h3>
+        <h3>Виды анимации</h3>
         <div class="ex">
             <span data-slidedown-trigger="ease">Default</span>
             <div class="slide_down" data-slidedown-target="ease">
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <h3>Synchronized blocks</h3>
+        <h3>Синхронизированные блоки</h3>
         <div class="ex">
             <span data-slidedown-trigger="data-sync_01">Sync block</span>
             <div class="slide_down" data-sync data-slidedown-target="data-sync_01">
@@ -128,16 +128,16 @@
         </div>
         <h2>
             <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Installation
+            Установка
         </h2>
-        <p>Use <a href="http://bower.io">Bower</a>:</p>
+        <p>Воспользуйтесь <a href="http://bower.io">Bower</a>:</p>
         <pre><code>$ bower install slide-down</code></pre>
-        <p>Or <a href="https://www.npmjs.com/package/slide-down">npm</a></p>
+        <p>Или <a href="https://www.npmjs.com/package/slide-down">npm</a></p>
         <pre><code>$ npm install slide-down</code></pre>
-        <p>If the above methods do not work, <a href="https://github.com/b2bcenter/slide-down/zipball/master">download from GitHub</a></p>
+        <p>Если вышеперечисленные способы не подошли, <a href="https://github.com/b2bcenter/slide-down/zipball/master">скачивайте c GitHub</a></p>
         <h2>
             <a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Setup
+            Подключение
         </h2>
         <div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!--  Css --&gt;</span>
 &lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>&frasl;jquery.slidedown.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;
@@ -148,18 +148,18 @@
         </div>
         <h2>
             <a id="markup" class="anchor" href="#markup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Markup
+            Разметка
         </h2>
         <div class="highlight highlight-text-html-basic"><pre>
-<span class="pl-c">&lt;!-- The trigger can exist anywhere. --&gt;</span>
-<span class="pl-c">&lt;!-- Block name (that can be open/close) is specified
-     in the attribute [data-slidedown-trigger] --&gt;</span>
+<span class="pl-c">&lt;!-- Триггер может располагаться где угодно. --&gt;</span>
+<span class="pl-c">&lt;!-- В атрибуте [data-slidedown-trigger] указываем имя блока,
+     который мы открываем/закрываем, в данном случае это txt --&gt;</span>
 &lt;<span class="pl-ent">span</span> <span class="pl-e">data-slidedown-trigger</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span>&gt;Текст&lt;/<span class="pl-ent">span</span>&gt;
 
-<span class="pl-c">&lt;!-- Sliding block can also exist anywhere,
-     Regardless of the trigger --&gt;</span>
-<span class="pl-c">&lt;!-- Block name the trigger refers to is specified
-     in the attribute [data-slidedown-target] it  --&gt;</span>
+<span class="pl-c">&lt;!-- Выезжающий блок, так же может распологаться где угодно,
+     вне зависимости от триггера --&gt;</span>
+<span class="pl-c">&lt;!-- В атрибуте [data-slidedown-target] указываем имя блока,
+     к нему будет обращаться триггер  --&gt;</span>
 &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down<span class="pl-pds">"</span></span> <span class="pl-e">data-slidedown-target</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down-content<span class="pl-pds">"</span></span>&gt;
         <span class="pl-c">&lt;!-- Контент --&gt;</span>
@@ -168,70 +168,70 @@
         </div>
         <h2>
             <a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Options
+            Опции
         </h2>
         <h3>
             <a id="open-block" class="anchor" href="#open-block" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Open block
+            Открытый блок
         </h3>
-        <p>If an open block is required on default, you should add the .slide_down--active class to the block with the [data-slidedown-target] attribute</p>
+        <p>Если необходимо, что бы блок был  по-умолчанию открыт, то блоку с атрибутом [data-slidedown-target] необходимо добавить класс .slide_down--active</p>
         <h3>
             <a id="animation" class="anchor" href="#animation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Animation
+            Анимация
         </h3>
-        <p>The basic animation can be modified. Do this requires adding [data-animation] , that will indicate the type and speed of the animation, a data-slidedown-target block:</p>
+        <p>Базовую анимацию можно изменить, для этого надо блоку с data-slidedown-target добавить [data-animation], который будет указывать тип и скорость анимации:</p>
         <ul>
-            <li>ease — Regular animation, default</li>
-            <li>ease-fast — Regular animation, fast speed</li>
-            <li>ease-slow — Regular animation, slow speed</li>
-            <li>bounce — "Bounce" animation, normal speed</li>
-            <li>bounce-fast — "Bounce" animation, fast speed</li>
-            <li>bounce-slow — "Bounce" animation, slow speed</li>
+            <li>ease — Обычная анимация, по умолчанию</li>
+            <li>ease-fast — Обычная анимация, быстрая скорость</li>
+            <li>ease-slow — Обычная анимация, медленная скорость</li>
+            <li>bounce — Анимация "прыгающий мяч", нормальная скорость</li>
+            <li>bounce-fast — Анимация "прыгающий мяч", быстрая скорость</li>
+            <li>bounce-slow — Анимация "прыгающий мяч", медленная скорость</li>
         </ul>
-        <div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Sliding block --&gt;</span>
+        <div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Выезжающий блок --&gt;</span>
 &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down<span class="pl-pds">"</span></span>
      <span class="pl-e">data-slidedown-target</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span>
      <span class="pl-e">data-animation</span>=<span class="pl-s"><span class="pl-pds">"</span>ease-slow<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down-content<span class="pl-pds">"</span></span>&gt;
-        <span class="pl-c">&lt;!-- Content --&gt;</span>
+        <span class="pl-c">&lt;!-- Контент --&gt;</span>
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre>
         </div>
         <h3>
             <a id="synchronicity" class="anchor" href="#synchronicity" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Synchronicity
+            Синхронность
         </h3>
-        <p>If you want the blocks to be interdependent (only one block can always be opened), it’s necessary to add a [data-sync] attribute to each dependent block with the [data-slidedown-target] attribute</p>
-        <div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- One sliding block --&gt;</span>
+        <p>Если необходимо, что бы блоки зависили друг от друга (всегда может быть открыт только один блок), то так же необходимо добавить всем зависимым блокам   с атрибутом [data-slidedown-target]  дополнительный аттрибут [data-sync].</p>
+        <div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Один выезжающий блок --&gt;</span>
 &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down<span class="pl-pds">"</span></span> <span class="pl-e">data-slidedown-target</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span> <span class="pl-e">data-sync</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down-content<span class="pl-pds">"</span></span>&gt;
-        <span class="pl-c">&lt;!-- Content --&gt;</span>
+        <span class="pl-c">&lt;!-- Контент --&gt;</span>
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;
 
-<span class="pl-c">&lt;!-- The 2nd sliding block --&gt;</span>
+<span class="pl-c">&lt;!-- Второй выезжающий блок --&gt;</span>
 &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down<span class="pl-pds">"</span></span> <span class="pl-e">data-slidedown-target</span>=<span class="pl-s"><span class="pl-pds">"</span>txt<span class="pl-pds">"</span></span> <span class="pl-e">data-sync</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slide_down-content<span class="pl-pds">"</span></span>&gt;
-        <span class="pl-c">&lt;!-- Content --&gt;</span>
+        <span class="pl-c">&lt;!-- Контент --&gt;</span>
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre>
         </div>
         <h2>
             <a id="methods" class="anchor" href="#methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Methods
+            Методы
         </h2>
-        <div class="highlight highlight-source-js"><pre><span class="pl-c">// This will open an assigned block</span>
-<span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-c1">open</span>(<span class="pl-s"><span class="pl-pds">"</span>id or $(<span class="pl-pds">'</span></span>element<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">"</span></span>);
-<span class="pl-c">// This will close an assigned block</span>
-<span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-c1">close</span>(<span class="pl-s"><span class="pl-pds">"</span>id or $(<span class="pl-pds">'</span></span>element<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">"</span></span>);
-<span class="pl-c">// This will close all or all assigned blocks</span>
-<span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-en">closeAll</span>(<span class="pl-s"><span class="pl-pds">"</span>empty or $(<span class="pl-pds">'</span></span>elements<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">"</span></span>); </pre>
+        <div class="highlight highlight-source-js"><pre><span class="pl-c">// Откроет указанный блок</span>
+<span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-c1">open</span>(<span class="pl-s"><span class="pl-pds">"</span>id или $(<span class="pl-pds">'</span></span>обьект<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">"</span></span>);
+<span class="pl-c">// Закроет указанный блок</span>
+<span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-c1">close</span>(<span class="pl-s"><span class="pl-pds">"</span>id или $(<span class="pl-pds">'</span></span>обьект<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">"</span></span>);
+<span class="pl-c">// Закроет все или все указанные блоки</span>
+<span class="pl-smi">$</span>.<span class="pl-smi">slideDown</span>.<span class="pl-en">closeAll</span>(<span class="pl-s"><span class="pl-pds">"</span>пустой или $(<span class="pl-pds">'</span></span>обьекты<span class="pl-s"><span class="pl-pds">'</span>)<span class="pl-pds">"</span></span>); </pre>
         </div>
         <h2>
             <a id="browsers" class="anchor" href="#browsers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            Browsers
+            Поддержка
         </h2>
-        <p>CSS3 animation is used. If the browser does not support animation, the blocks will be shown as hide / show</p>
+        <p>Используется CSS3 анимация, если браузер неподдерживает анимацию, то блоки будут показаны как hide/show</p>
         <ul>
             <li>IE 9+</li>
             <li>Chrome 8+</li>
@@ -241,13 +241,13 @@
         </ul>
         <h2>
             <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-            license
+            Лицензия
         </h2>
         <p><a href="https://github.com/b2bcenter/slide-down/blob/master/LICENSE">MIT</a></p>
     </section>
     <footer>
-        <p>This plugin is maintained by <a href="https://github.com/b2bcenter">b2bcenter</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Плагин поддерживается при поддержке <a href="https://github.com/b2bcenter">b2bcenter</a></p>
+        <p><small>Размещено на GitHub Pages &mdash; Шаблон <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>
 </div>
 <script src="javascripts/scale.fix.js"></script>
