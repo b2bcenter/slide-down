@@ -1,25 +1,25 @@
 # Slide Down #
-Очередной jQuery плагин для показа блоков, который умеет делать это по другому. Необходим для выезжающих блоков, которые именно "выезжают" и сдвигают контент. 
+Each jQuery plugin to display blocks can do it differently. It’s essential for sliding blocks, which are obviously "sliding" and shifting content.
 
-## [Демо](http://b2bcenter.github.io/slide-down/#Demo) ##
+## [Demo](http://b2bcenter.github.io/slide-down/#Demo) ##
 
-## Установка ##
-Воспользуйтесь [Bower](http://bower.io):
+## Installation ##
+Use [Bower](http://bower.io):
 
 
 ```
 $ bower install slide-down
 ```
 
-Или [npm](https://www.npmjs.com/package/slide-down)
+Or [npm](https://www.npmjs.com/package/slide-down)
 
 ```
 $ npm install slide-down
 ```
 
-Если вышеперечисленные способы не подошли, [скачивайте с GitHub](https://github.com/b2bcenter/slide-down/zipball/master)
+If the above methods do not work, [download from GitHub](https://github.com/b2bcenter/slide-down/zipball/master)
 
-## Подключение ##
+## Setup ##
 
 ```html
 <!--  Css -->
@@ -32,91 +32,93 @@ $ npm install slide-down
 
 
 
-## Разметка ##
+## Markup ##
 
 ```html
 
-<!-- Триггер может располагаться где угодно. -->
-<!-- В атрибуте [data-slidedown-trigger] указываем имя блока,
-     который мы открываем/закрываем, в данном случае это txt  -->
+<!-- The trigger can exist anywhere. -->
 
-<span data-slidedown-trigger="txt">Текст</span>
+<!-- Block name (that can be open/close) is specified
+     in the attribute [data-slidedown-trigger]   -->
 
-<!-- Выезжающий блок, так же может распологаться где угодно,
-     вне зависимости от триггера -->
-<!-- В атрибуте [data-slidedown-target] указываем имя блока,
-     к нему будет обращаться триггер  -->
+<span data-slidedown-trigger="txt">Text</span>
+
+<!-- Sliding block can also exist anywhere,
+     Regardless of the trigger -->
+     
+<!-- Block name the trigger refers to is specified
+     in the attribute [data-slidedown-target] it   -->
 
 <div class="slide_down" data-slidedown-target="txt">
 	<div class="slide_down-content">
-		<!-- Контент -->
+		<!-- Content -->
 	</div>
 </div>
 ```
 
 
 
-## Опции ##
+## Options ##
 
-### Открытый блок ###
-Если необходимо, что бы блок был  по-умолчанию открыт, то блоку с атрибутом data-slidedown-target необходимо добавить класс .slide_down--active
+### Open block ###
+If an open block is required on default,  you should add the .slide_down--active class to the block with the [data-slidedown-target] attribute
 
-### Анимация ###
-Базовую анимацию можно изменить, для этого надо блоку с data-slidedown-target добавить data-animation, который будет указывать тип и скорость анимации:
+### Animation ###
+The basic animation can be modified. Do this requires adding [data-animation] , that will indicate the type and speed of the animation, a data-slidedown-target block:
 
-* ease — Обычная анимация, по умолчанию
-* ease-fast — Обычная анимация, быстрая скорость
-* ease-slow — Обычная анимация, медленная скорость
-* bounce — Анимация "прыгающий мяч", нормальная скорость
-* bounce-fast — Анимация "прыгающий мяч", быстрая скорость
-* bounce-slow — Анимация "прыгающий мяч", медленная скорость
+* ease — Regular animation, default
+* ease-fast — Regular animation, fast speed 
+* ease-slow — Regular animation, slow speed 
+* bounce — "Bounce" animation, normal speed 
+* bounce-fast — "Bounce" animation, fast speed
+* bounce-slow — "Bounce" animation, slow speed 
 
 
 ```html
-<!-- Выезжающий блок -->
+<!-- Sliding block -->
 <div class="slide_down" data-slidedown-target="txt"  data-animation="ease-slow">
 	<div class="slide_down-content">
-		<!-- Контент -->
+		<!-- Content -->
 	</div>
 </div>
 ```
 
 
-### Синхронность ###
-Если необходимо, что бы блоки зависили друг от друга (всегда может быть открыт только один блок), то так же необходимо добавить всем зависимым блокам   с атрибутом data-slidedown-target  дополнительный аттрибут data-sync.
+### Synchronicity ###
+If you want the blocks to be interdependent (only one block can always be opened), it’s necessary to add a [data-sync] attribute to each dependent block with the [data-slidedown-target] attribute
 
 
 ```html
-<!-- Один выезжающий блок -->
+<!-- One sliding block -->
 <div class="slide_down" data-slidedown-target="txt" data-sync>
 	<div class="slide_down-content">
-		<!-- Контент -->
+		<!-- Content -->
 	</div>
 </div>
 
-<!-- Второй выезжающий блок -->
+<!-- The 2nd sliding block -->
 <div class="slide_down" data-slidedown-target="txt" data-sync>
 	<div class="slide_down-content">
-		<!-- Контент -->
+		<!-- Content -->
 	</div>
 </div>
 ```
 
 
-## Методы ##
+## Methods ##
 
 
 ```javascript
-// Откроет указанный блок
-$.slideDown.open('id или $('обьект')');
-// Закроет указанный блок
-$.slideDown.close('id или $('обьект')');
-// Закроет все или все указанные блоки
-$.slideDown.closeAll('пустой или $('обьекты')'); 
+// This will open an assigned block
+$.slideDown.open('id или $('element')');
+// This will close an assigned block
+$.slideDown.close('id или $('element')');
+// This will close all or all assigned blocks
+$.slideDown.closeAll('пустой или $('elements')'); 
 ```
 
-## Поддержка ##
-Используется CSS3 анимация, если браузер неподдерживает анимацию, то блоки будут показаны как hide/show
+## Browsers ##
+CSS3 animation is used. If the browser does not support animation, the blocks will be shown as hide / show
 
 * IE 9+
 * Chrome 8+
@@ -124,6 +126,6 @@ $.slideDown.closeAll('пустой или $('обьекты')');
 * Safari 3+
 * Opera 10.6+
 
-## Лицензия ##
+## License ##
 
 [MIT](https://github.com/b2bcenter/slide-down/blob/master/LICENSE)
