@@ -27,7 +27,7 @@ If the above methods do not work, [download from GitHub](https://github.com/b2bc
 <!-- jQuery -->
 <script src="/jquery.min.js"></script>
 <!-- SlideDown -->
-<script src=«jquery.slidedown.js"></script>
+<script src="/jquery.slidedown.js"></script>
 ```
 
 
@@ -110,11 +110,11 @@ If you want the blocks to be interdependent (only one block can always be opened
 
 ```javascript
 // This will open an assigned block
-$.slideDown.open('id или $('element')');
+$.slideDown.open("id or $('element')");
 // This will close an assigned block
-$.slideDown.close('id или $('element')');
+$.slideDown.close("id or $('element')");
 // This will close all or all assigned blocks
-$.slideDown.closeAll('пустой или $('elements')'); 
+$.slideDown.closeAll("empty or $('elements')"); 
 ```
 
 ## Browsers ##
