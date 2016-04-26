@@ -27,7 +27,7 @@ $ npm install slide-down
 <!-- jQuery -->
 <script src="/jquery.min.js"></script>
 <!-- SlideDown -->
-<script src=«jquery.slidedown.js"></script>
+<script src=/jquery.slidedown.js"></script>
 ```
 
 
@@ -108,14 +108,14 @@ $ npm install slide-down
 
 ```javascript
 // Откроет указанный блок
-$.slideDown.open('id или $('обьект')');
+$.slideDown.open("id или $('обьект')");
 // Закроет указанный блок
-$.slideDown.close('id или $('обьект')');
+$.slideDown.close("id или $('обьект')");
 // Закроет все или все указанные блоки
-$.slideDown.closeAll('пустой или $('обьекты')'); 
+$.slideDown.closeAll("пустой или $('обьекты')"); 
 ```
 
-## Поддержка ##
+## Браузеры ##
 Используется CSS3 анимация, если браузер неподдерживает анимацию, то блоки будут показаны как hide/show
 
 * IE 9+
